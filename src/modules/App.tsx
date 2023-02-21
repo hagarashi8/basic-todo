@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
-import Checkbox from './assets/checkbox'
-import Add from './assets/add-new'
-import Remove from './assets/remove'
+import Checkbox from '../assets/checkbox'
+import Add from '../assets/add-new'
+import Remove from '../assets/remove'
 import './index.css'
 //<a href="https://iconscout.com/icons/add-new" target="_blank">Add New Icon</a> by <a href="https://iconscout.com/contributors/unicons" target="_blank">Unicons Font</a>
 //<a href="https://iconscout.com/icons/checkbox" target="_blank">Checkbox Icon</a> on <a href="https://iconscout.com">IconScout</a>
