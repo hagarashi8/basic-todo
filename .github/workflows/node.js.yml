@@ -42,7 +42,7 @@ jobs:
         cwd: ./
         files: |
           ./dist
-        outPath: page.tar.gz
+        outPath: page.tar
     - name: Upload GitHub Pages artifact
       uses: actions/upload-pages-artifact@v1.0.7
       with:
