@@ -14,11 +14,11 @@ function App() {
   },[])
   const [loaded, setLoaded] = useState(false)
   const [todos, setTodos] = useState<{name: string, done: boolean}[]>([])
+  const updateStorage = ()=>window.localStorage.setItem("todos", JSON.stringify(todos))
   useEffect(()=>{
     if(!loaded) return;
-    window.localStorage.setItem("todos", JSON.stringify(todos))
+    updateStorage
   },[todos])
-  const updateStorage = ()=>window.localStorage.setItem("todos", JSON.stringify(todos))
   const addTodo = (todo: any) => () => {setTodos((todos)=>[...todos, todo])}
   const removeTodo = (todo: any) => () => {setTodos((todos) => todos.filter((el) => el.name != todo.name))}
   const checkTodo = (todo: any) => () => {setTodos((todos) => todos.map((t) => t.name == todo.name ? { ...t, done: !t.done } : t))}
