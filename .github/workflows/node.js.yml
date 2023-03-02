@@ -3,8 +3,9 @@
 
 name: Node.js CI
 permissions:
-  id-token: write # This is required for requesting the JWT
-  contents: read  # This is required for actions/checkout
+  id-token: write
+  contents: read
+  pages: write
 on:
   push:
     branches: [ "master" ]
